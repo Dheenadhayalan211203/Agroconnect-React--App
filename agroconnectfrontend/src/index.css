@@ -1,0 +1,342 @@
+ body
+ {
+    background-image: url(/public/farmbkrnd.jpg)
+;
+background-size: cover;
+background-repeat: no-repeat;
+ }
+ 
+ .usdbcont
+ {
+     
+    border:solid  black 1px;
+    
+    padding: 30px;
+     
+    display: flex;
+justify-content: center;
+ margin: 70px;
+ padding-top: 30px;
+ padding-bottom: 50px;
+ background-color: rgba(0, 0, 0, 0.6);
+ border-radius: 30px;
+  
+  
+ }
+ 
+
+ .dashbrdfrm input
+ {
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+ }
+ .dashbrdfrm button
+ {
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 100px;
+    background-color: rgb(9, 175, 9);
+    font-size: large;
+    font-style: italic;
+    
+ }
+
+ .form
+ 
+ 
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .fdhead
+ {
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ .profileatri
+ {
+    display: flex;
+    gap: 20px;
+
+ }
+ .profileatri img
+ {
+   height: 50px;
+   border-radius: 50%;
+ }
+  
+ .noofprodadded
+ {
+    border: solid black 1px;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight:bolder;
+    font-size:medium ;
+ }
+
+ .prodimg
+ {
+    height: 200px;
+    border-radius: 20px;
+ }
+
+ .prodcard
+ {
+    border: black solid 1px;
+    background-color: rgba(255, 255, 255, 0.689);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px;
+
+ }
+ .prodcard-container
+ {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    
+ }
+
+ .login-cooontainer
+ {
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 100px;
+     
+    background-color: rgba(26, 25, 25, 0.745);
+    border-radius: 20px;
+    color: white;
+    
+ }
+
+ 
+
+ .login-cooontainer h2{
+   text-align: center;
+   padding-top: 30px;
+   font-size:30px;
+   
+
+ }
+ .login-cooontainer form{
+    padding: 100px;
+    padding-top: 50px;
+    
+ }
+ .email-cont 
+ {
+   text-align: center;
+   font-size: larger;
+
+ }
+ .email-cont input
+ {
+height: 40px;
+width: 300px;
+border-radius: 20px;
+padding-left:10px ;
+ }
+ .pass-cont
+ {
+   text-align: center;
+ }
+ .pass-cont input
+ {
+   height: 40px;
+width: 300px;
+border-radius: 20px;
+padding-left:10px ;
+ }
+
+ .loginbutton
+ {
+   text-align: center;
+   margin-left: 90px;
+   margin-top: 50px;
+   padding-left:50px;
+   padding-right: 50px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-weight: bold;
+   background-color: rgb(68, 187, 78);
+   border-radius: 20px;
+    
+ }
+
+ .loginbutton:hover
+ {
+   color: rgb(226, 6, 6);
+   background-color: rgb(177, 239, 160);
+ }
+
+ .pass-cont h2
+ {
+   font-size: 20px;
+ }
+ .email-cont  h2{
+   font-size: 20px;
+ }
+ .purchased-products
+ {
+   border: 1px solid black ;
+ }
+ .purchasedcont
+ {
+   display: flex;
+   justify-content: space-around;
+ }
+ .addtocart
+ {
+   background-color: black;
+   color: wheat;
+   height: 60px;
+   border-radius: 20px;
+   text-align: center;
+   font-weight: bold;
+   font-style: oblique;
+   pointer-events: fill;
+ }
+  
+ .addtocartnavi
+ {
+   height: 60px;
+   background-color: rgb(153, 153, 12);
+   margin-top: 30px;
+ }
+ .addtocartnavi img{
+   height: 30px;
+   display: flex;
+   align-items: flex-end;
+ }
+ .udbprodpur
+ {
+   border: 1px solid black;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.525);
+   color: white;
+ }
+ .purchasedproductsdisp {
+   background-color: #6699658b;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+   padding: 20px;
+   margin-bottom: 20px; /* Add some space between cards */
+   width: 300px; /* Adjust width as needed */
+}
+
+.purchasedproductsdisp p {
+   margin: 5px 0; /* Add some space between paragraphs */
+}
+.purprodsip
+{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+.products-cart-cont
+{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+ 
+ 
+.product-pur
+{
+   border: 1px solid black;
+   display: flex  ;
+   justify-content: space-between;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   border-radius: 20px;
+    
+}
+.product-pur:hover{
+   background-color: rgb(223, 219, 219);
+}
+.product-pur-img img
+{
+   height: 50px;
+    padding: 20px;
+    border-right: 100px;
+}
+.prodpurdata
+{
+   padding: 20px;
+}
+.purbut button
+{
+   margin: 20px;
+   border-radius: 30px;
+   background-color: green;
+   padding: 10px;
+   color: white;
+   font-size: medium;
+   
+}
+.purbut button:hover
+{
+   background-color: black;
+   color: whitesmoke;
+   font-style: oblique;
+}
+.cartdisp 
+{
+   border: 1px solid black;
+   padding: 30px;
+   margin: 30px;
+   margin-left: 300px;
+   margin-right: 300px;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.3);
+   border-radius: 30px;
+}
+
+.editbut
+{
+   margin: 10px;
+   border-radius: 10px;
+   color: rgb(255, 255, 255);
+   font-size: medium;
+   background-color: black;
+   font-style: italic;
+  
+
+}
+
+.editbut:hover{
+   background-color: green
+}
+
+.deletebut
+{
+   margin: 10px;
+   border-radius: 10px;
+   color: rgb(255, 255, 255);
+   font-size: medium;
+   background-color: rgb(176, 10, 10);
+   font-style: italic;
+}
+.deletebut:hover{
+   background-color: wheat;
+   color: black;
+}
