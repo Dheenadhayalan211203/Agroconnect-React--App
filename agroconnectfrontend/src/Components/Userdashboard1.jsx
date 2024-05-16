@@ -5,7 +5,7 @@ import AddToCartUser1 from './Addtocartuser1';
 function Userdashboard1() {
   const [expenses, setExpenses] = useState([]);
   const [purchases, setPurchases] = useState([]);
-  const [showCart, setShowCart] = useState(false); // State to toggle AddToCartUser1 component
+  const [showCart, setShowCart] = useState(false);  
 
   useEffect(() => {
     fetch('https://agroconnect-5vey.onrender.com/api/expenses')
@@ -26,8 +26,7 @@ function Userdashboard1() {
       })
       .catch(error => console.error('Error fetching purchases:', error));
   }, []);
-
-  // Function to add a product to the user1 collection in the database
+ 
   const handleAddProduct = async (title, amount) => {
     try {
       const response = await fetch('https://agroconnectusers-endpoints.onrender.com/api/user1', {
@@ -42,7 +41,7 @@ function Userdashboard1() {
       });
       const newData = await response.json();
       console.log('Product added:', newData);
-      // Optionally, you can update the state or perform any other actions after adding the product
+      
     } catch (error) {
       console.error('Error adding product:', error);
     }
@@ -53,7 +52,7 @@ function Userdashboard1() {
       <div >
         <div className='fdhead'>
           
-          <h1>Vishnus Dashboard</h1>
+          <h1>User1 Dashboard</h1>
           <div className="profileatri">
             <img src="" alt="profilepic" />
             <p>vishnu@gmail.com</p>
@@ -61,12 +60,12 @@ function Userdashboard1() {
         
         </div> 
        
-      {/* Button to toggle AddToCartUser1 component */}
+       
       <button className="addtocartnavi" onClick={() => setShowCart(!showCart)}><img src='cart.jpeg'></img></button>
       {showCart && <AddToCartUser1 />}  
       </div>
       <div className="prodcard-container">
-        {/* Display expenses */}
+        
         {expenses.map(expense => (
           <div className='prodcard' key={expense._id}>
                  
@@ -83,7 +82,7 @@ function Userdashboard1() {
             <p>Product Added On {expense.date}</p>
             <p >  {expense.title}</p>
             <p>Prise Per Kg {expense.amount}</p>
-            {/* Button to add product */}
+            
             <button className="addtocart" onClick={() => handleAddProduct(expense.title, expense.amount)}>
               Add Product to Cart
             </button>
@@ -91,7 +90,7 @@ function Userdashboard1() {
         ))}
       </div>
       <div className='udbprodpur'>
-        {/* Display purchases */}
+        
         
         <h2>Products You Purchased</h2>
         <div className="purprodsip"> 
