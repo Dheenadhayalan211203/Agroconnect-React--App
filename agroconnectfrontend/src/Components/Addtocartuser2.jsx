@@ -16,10 +16,10 @@ const AddToCartUser2 = () => {
   }, []);
 
   const handleAddToCart = (product) => {
-    // Update local state
+    
     setCart([...cart, product]);
 
-    // Send data to API
+    
     fetch('https://agroconnect-userpurchase-endpoint.onrender.com/api/user2purchase', {
       method: 'POST',
       headers: {
@@ -33,7 +33,7 @@ const AddToCartUser2 = () => {
     .then(response => response.json())
     .then(data => {
       console.log('Added to cart:', data);
-      // Set the orderPlaced state to trigger rendering of order placed message
+      
       setOrderPlaced(data);
     })
     .catch(error => console.error('Error adding to cart:', error));
