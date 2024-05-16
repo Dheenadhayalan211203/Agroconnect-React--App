@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-
 const AddToCartUser1 = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [orderPlaced, setOrderPlaced] = useState(null);
-
-  useEffect(() => {
+useEffect(() => {
     fetch('https://agroconnectusers-endpoints.onrender.com/api/user1')
       .then(response => response.json())
       .then(data => {
@@ -14,13 +12,9 @@ const AddToCartUser1 = () => {
       })
       .catch(error => console.error('Error fetching products:', error));
   }, []);
-
-  const handleAddToCart = (product) => {
-    // Update local state
+ const handleAddToCart = (product) => {
     setCart([...cart, product]);
-
-    // Send data to API
-    fetch('https://agroconnect-userpurchase-endpoint.onrender.com/api/user1purchase', {
+ fetch('https://agroconnect-userpurchase-endpoint.onrender.com/api/user1purchase', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +27,7 @@ const AddToCartUser1 = () => {
     .then(response => response.json())
     .then(data => {
       console.log('Added to cart:', data);
-      // Set the orderPlaced state to trigger rendering of order placed message
+       
       setOrderPlaced(data);
     })
     .catch(error => console.error('Error adding to cart:', error));
