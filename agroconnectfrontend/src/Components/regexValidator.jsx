@@ -1,5 +1,4 @@
-//emailRegex = /^[^\s@]+@[^\s@]+$/;
-// passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+ 
 
 export const emailValidator = email => {
     const emailRegex = /^[^\s@]+@[^\s@]+$/;
